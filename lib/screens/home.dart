@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          // 🔎 Barra de búsqueda
+          //  Barra de búsqueda
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    // 🆔 Número del Pokémon
+                                    //  Número del Pokémon
                                     Align(
                                       alignment: Alignment.topRight,
                                       child: Padding(
@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                     ),
 
-                                    // 🖼 Imagen
+                                    //  Imagen
                                     Expanded(
                                       child: Padding(
                                         padding: const EdgeInsets.symmetric(
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
           ),
 
-          // 👀 Mostrar resultados de búsqueda
+          // Mostrar resultados de búsqueda
           if (_searchQuery.isNotEmpty)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),

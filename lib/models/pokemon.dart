@@ -28,7 +28,7 @@ class Pokemon {
             .toList() ??
         [];
 
-    // ✅ Evitar error de tipo Null → double
+    //  Evitar error de tipo Null → double
     final heightValue = json['height'];
     final weightValue = json['weight'];
 

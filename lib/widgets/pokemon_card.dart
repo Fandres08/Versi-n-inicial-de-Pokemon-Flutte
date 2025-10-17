@@ -46,7 +46,7 @@ class PokemonCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Franja superior con el color del tipo
+              
               Container(
                 height: 8,
                 decoration: BoxDecoration(
@@ -62,7 +62,7 @@ class PokemonCard extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Número del Pokémon (id real)
+                    
                     Text(
                       '#${pokemon.id}',
                       style: const TextStyle(
@@ -73,7 +73,7 @@ class PokemonCard extends StatelessWidget {
 
                     const SizedBox(height: 6),
 
-                    // Imagen
+                    
                     Image.network(
                       pokemon.imageUrl.isNotEmpty ? pokemon.imageUrl : 'https://via.placeholder.com/96',
                       height: 80,
@@ -95,7 +95,7 @@ class PokemonCard extends StatelessWidget {
 
                     const SizedBox(height: 8),
 
-                    // Nombre
+                    
                     Text(
                       pokemon.name.toUpperCase(),
                       style: const TextStyle(
@@ -108,7 +108,7 @@ class PokemonCard extends StatelessWidget {
 
                     const SizedBox(height: 6),
 
-                    // Tipo principal
+                    
                     Text(
                       mainType,
                       style: const TextStyle(

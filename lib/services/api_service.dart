@@ -12,7 +12,7 @@ class ApiService {
       final data = json.decode(response.body);
       final results = data['results'] as List;
 
-      // Cargar detalles individuales (nombre, imagen, etc.)
+      
       List<Pokemon> pokemons = [];
       for (var item in results) {
         final detailResponse = await http.get(Uri.parse(item['url']));
